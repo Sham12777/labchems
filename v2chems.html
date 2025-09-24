@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-6">
+    <title>LAB CHEMICALS LIST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: #000000;
+            color: #225;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 2;
+        }
+        header {
+            background: #2a5296 linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 2rem 1rem 1rem 1rem;
+            text-align: center;
+        }
+        .search-bar {
+            margin: 2rem auto 1rem auto;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 0.7rem 1rem;
+            font-size: 1rem;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            width: 380px;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: #2a5298;
+        }
+        .chemical-table {
+            margin: 0 auto 2rem auto;
+            width: 90%;
+            max-width: 1100px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 3px 14px rgba(44,90,191,0.10);
+            overflow: hidden;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 0.65rem 0.5rem;
+            border-bottom: 1px solid #eef2fa;
+            text-align: left;
+        }
+        th {
+            background: #e4eaf3;
+        }
+        tr:hover {
+            background: #f5f8ff;
+        }
+        @media (max-width: 600px) {
+            .chemical-table, table {
+                font-size: 0.9rem;
+            }
+            input[type="text"] {
+                width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LAB CHEMICALS LIST</h1>
+        <p>Download html file and open it in your browser.</p>
+    </header>
+    <section class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search chemical name, location, etc...">
+    </section>
+    <div class="chemical-table">
+        <table id="chemicalsTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Chemical Name</th>
+                    <th>Location / Shelf</th>
+                </tr>
+            </thead>
+            <tbody>
+<tr><td>1</td><td>Ammonium Chloride anhydrous</td><td>Top</td></tr>
+<tr><td>2</td><td>Ammonium thiocyanate</td><td>Top</td></tr>
+<tr><td>3</td><td>L- asparagine monohydrate (unopened)</td><td>Top</td></tr>
+<tr><td>4</td><td>L+-Arabinose 99% AR</td><td>Top</td></tr>
+<tr><td>5</td><td>L-Asparagine min 98%, TLC</td><td>Top</td></tr>
+<tr><td>6</td><td>Beta - Alanine (.unopened)</td><td>Top</td></tr>
+<tr><td>7</td><td>L- Arginine</td><td>Top</td></tr>
+<tr><td>8</td><td>Agarose (LOW EEO)</td><td>Top</td></tr>
+<tr><td>9</td><td>N-Acetyl-L-cysteine</td><td>Top</td></tr>
+<tr><td>10</td><td>Azure B, (direct synthesis)</td><td>Top</td></tr>
+<tr><td>11</td><td>Ammonium sulphate purified</td><td>Top</td></tr>
+<tr><td>12</td><td>Amm. heptamolybdate tetrahydrate</td><td>Top</td></tr>
+<tr><td>13</td><td>Agarose</td><td>Top</td></tr>
+<tr><td>14</td><td>Aluminium chloride anhydrous</td><td>Top</td></tr>
+<tr><td>15</td><td>agar poweder (bacteriological)</td><td>Top</td></tr>
+<tr><td>16</td><td>Ammonium chloride</td><td>Top</td></tr>
+<tr><td>17</td><td>ammonium phosphate di basic</td><td>Top</td></tr>
+<tr><td>18</td><td>ammonium phosphate mono basic</td><td>Top</td></tr>
+<tr><td>19</td><td>Ammonium ferrous sulphate</td><td>Top</td></tr>
+<tr><td>20</td><td>Ammonium Metavanadate AR</td><td>Top</td></tr>
+<tr><td>21</td><td>Amonnium iron III citrate purified</td><td>Top</td></tr>
+<tr><td>22</td><td>Di amonnium hydrogen citrate extra pure</td><td>Top</td></tr>
+<tr><td>23</td><td>Ammonium Nitrate</td><td>Top</td></tr>
+<tr><td>24</td><td>Ammonium Chloride 98% extra pure</td><td>Top</td></tr>
+<tr><td>25</td><td>Ammonium(+)- Tartarate, A.R.</td><td>Top</td></tr>
+<tr><td>26</td><td>Ammonium sulphate</td><td>Top</td></tr>
+<tr><td>27</td><td>Aluminium chloride hexahydrate</td><td>Top</td></tr>
+<tr><td>28</td><td>Ammonoum Bromide NCetylNNNTrimethyl</td><td>Top</td></tr>
+<tr><td>29</td><td>Beef extract</td><td>Top</td></tr>
+<tr><td>30</td><td>Biphenyl-2-ol</td><td>Top</td></tr>
+<tr><td>31</td><td>Borax</td><td>Top</td></tr>
+<tr><td>32</td><td>Barium Chloride</td><td>Top</td></tr>
+<tr><td>33</td><td>butylated hydroxy tolouene</td><td>Top</td></tr>
+<tr><td>34</td><td>boron trifluride dihydrate</td><td>Top</td></tr>
+<tr><td>35</td><td>bromocersol green</td><td>Top</td></tr>
+<tr><td>36</td><td>bromothymol blue</td><td>Top</td></tr>        
+<tr><td>37</td><td>cupric sulphate</td><td>Bottom</td></tr>
+<tr><td>38</td><td>Charcoal activated</td><td>Bottom</td></tr>
+<tr><td>39</td><td>Cadmium Chloride Mono hydrate pure</td><td>Bottom</td></tr>
+<tr><td>40</td><td>Copper II Ethylene di amine complex 1M</td><td>Bottom</td></tr>
+<tr><td>41</td><td>Calcofluor white stain</td><td>Bottom</td></tr>
+<tr><td>42</td><td>Cupric sulphate pentahydrate</td><td>Bottom</td></tr>
+<tr><td>43</td><td>L-cystine (biochemistry)</td><td>Bottom</td></tr>
+<tr><td>44</td><td>Casein hydrolysate</td><td>Bottom</td></tr>
+<tr><td>45</td><td>congo red powder (unopened)</td><td>Bottom</td></tr>
+<tr><td>46</td><td>2 6-dichloro quinone...(gibbs reagent)</td><td>Bottom</td></tr>
+<tr><td>47</td><td>calcium phytate</td><td>Bottom</td></tr>
+<tr><td>48</td><td>D (+)-Cellobiose</td><td>Bottom</td></tr>
+<tr><td>49</td><td>Coomassie brilliant blue</td><td>Bottom</td></tr>
+<tr><td>50</td><td>calcium chloride dihydrate 98%</td><td>Bottom</td></tr>
+<tr><td>51</td><td>N-Cetyl-N,N,N-Trimethyl amonium bromide</td><td>Bottom</td></tr>
+<tr><td>52</td><td>calcium carbonate</td><td>Bottom</td></tr>
+<tr><td>53</td><td>cellulose micro crystalline</td><td>Bottom</td></tr>
+<tr><td>54</td><td>Casein technical</td><td>Bottom</td></tr>
+<tr><td>55</td><td>carboxy methyl cellulose sodium salt</td><td>Bottom</td></tr>
+<tr><td>56</td><td>calcium hydroxide pure</td><td>Bottom</td></tr>
+<tr><td>57</td><td>Caesin Vitamin free</td><td>Bottom</td></tr>
+<tr><td>58</td><td>calcium oxide</td><td>Bottom</td></tr>
+<tr><td>59</td><td>calcium oxalate</td><td>Bottom</td></tr>
+<tr><td>60</td><td>citric acid anhydrous 99.5%</td><td>Bottom</td></tr>
+<tr><td>61</td><td>calcium hydroxide</td><td>Bottom</td></tr>
+<tr><td>62</td><td>calcium chloride (fused)</td><td>Bottom</td></tr>
+<tr><td>63</td><td>casein enzyme hydrolysate</td><td>Bottom</td></tr>
+<tr><td>64</td><td>Dinitro salicylic acid</td><td>Bottom</td></tr>
+<tr><td>65</td><td>2-2- di methyl succinic acid</td><td>Bottom</td></tr>
+<tr><td>66</td><td>o- dianisidine</td><td>Bottom</td></tr>
+<tr><td>67</td><td>Diacetyl monoxime</td><td>Bottom</td></tr>
+<tr><td>68</td><td>dibenzothiophene</td><td>Bottom</td></tr>
+<tr><td>69</td><td>Dextrose Anhydrous purified</td><td>Bottom</td></tr>
+<tr><td>70</td><td>EDTA Di sodium salt</td><td>Top</td></tr>
+<tr><td>71</td><td>EDTA EXTRA PURE</td><td>Top</td></tr>
+<tr><td>72</td><td>ethyl- 4 hydroxy benzoate</td><td>Top</td></tr>
+<tr><td>73</td><td>Ferulic acid</td><td>Top</td></tr>
+<tr><td>74</td><td>follin ciocalteu's reagent</td><td>Top</td></tr>
+<tr><td>75</td><td>ferrous sulphate</td><td>Top</td></tr>
+<tr><td>76</td><td>ferrous chloride hydrate</td><td>Top</td></tr>
+<tr><td>77</td><td>ferrous chloride tetrahydrate</td><td>Top</td></tr>
+<tr><td>78</td><td>Gelatin cell culture tested</td><td>Top</td></tr>
+<tr><td>79</td><td>gelatin (plastic bottle)</td><td>Top</td></tr>
+<tr><td>80</td><td>Glutaric acid</td><td>Top</td></tr>
+<tr><td>81</td><td>gum arabic</td><td>Top</td></tr>
+<tr><td>82</td><td>gallic acid</td><td>Top</td></tr>
+<tr><td>83</td><td>L-glutamine</td><td>Top</td></tr>
+<tr><td>84</td><td>glycine</td><td>Top</td></tr>
+<tr><td>85</td><td>glycerol anhydrous</td><td>Top</td></tr>
+<tr><td>86</td><td>Hexadecyltrimethyl ammonium bromide (big and small bottles)</td><td>Top</td></tr>
+<tr><td>87</td><td>Humic acid</td><td>Top</td></tr>
+<tr><td>88</td><td>hyamine 1622 for tenside test</td><td>Top</td></tr>
+<tr><td>89</td><td>111 333-hexamethyl didilazane</td><td>Top</td></tr>
+<tr><td>90</td><td>hydrogen peroxide</td><td>Top</td></tr>
+<tr><td>91</td><td>iodine</td><td>Top</td></tr>
+<tr><td>92</td><td>ibuprofen sodium salt</td><td>Top</td></tr>
+<tr><td>93</td><td>iodine monochloride solution</td><td>Top</td></tr>
+<tr><td>94</td><td>inulin (biochemistry)</td><td>Top</td></tr>
+<tr><td>95</td><td>inositol</td><td>Top</td></tr>
+<tr><td>96</td><td>luria bertani broth</td><td>Bottom</td></tr>
+<tr><td>97</td><td>lactophenol cotton blue</td><td>Bottom</td></tr>
+<tr><td>98</td><td>lauryl tryptose broth</td><td>Bottom</td></tr>
+<tr><td>99</td><td>lead nitrate</td><td>Bottom</td></tr>
+<tr><td>100</td><td>lead sulphate</td><td>Bottom</td></tr>
+<tr><td>101</td><td>L-tyrosine</td><td>Bottom</td></tr>
+<tr><td>102</td><td>L-asparagine monohydrate</td><td>Bottom</td></tr>
+<tr><td>103</td><td>L-dopa</td><td>Bottom</td></tr>
+<tr><td>104</td><td>lauryl sulphate sodium salt, exrta pure</td><td>Bottom</td></tr>
+<tr><td>105</td><td>methylene blue</td><td>Bottom</td></tr>
+<tr><td>106</td><td>D- mannose</td><td>Bottom</td></tr>
+<tr><td>107</td><td>methyl cellosolve</td><td>Bottom</td></tr>
+<tr><td>108</td><td>mercuric sulphate</td><td>Bottom</td></tr>
+<tr><td>109</td><td>mercury</td><td>Bottom</td></tr>
+<tr><td>110</td><td>mercury II oxide red</td><td>Bottom</td></tr>
+<tr><td>111</td><td>mandelonitrile</td><td>Bottom</td></tr>
+<tr><td>112</td><td>maleic acid</td><td>Bottom</td></tr>
+<tr><td>113</td><td>magnesium sulphate</td><td>Bottom</td></tr>
+<tr><td>114</td><td>magnesium citrate hydrate</td><td>Bottom</td></tr>
+<tr><td>115</td><td>myristic acid</td><td>Bottom</td></tr>
+<tr><td>116</td><td>methyltriocytyl ammonium bromide</td><td>Bottom</td></tr>
+<tr><td>117</td><td>malonic acid</td><td>Bottom</td></tr>
+<tr><td>118</td><td>mannitol</td><td>Bottom</td></tr>
+<tr><td>119</td><td>manganese sulphate</td><td>Bottom</td></tr>
+<tr><td>120</td><td>manganous chloride</td><td>Bottom</td></tr>
+<tr><td>121</td><td>magnesium sulphate</td><td>Bottom</td></tr>
+<tr><td>122</td><td>manganese IV oxide</td><td>Bottom</td></tr>
+<tr><td>123</td><td>magnesium sulphate heptahydrate</td><td>Bottom</td></tr>
+<tr><td>124</td><td>Nutrient agar</td><td>Bottom</td></tr>
+<tr><td>125</td><td>ninhydrin</td><td>Bottom</td></tr>
+<tr><td>126</td><td>Nalidixic acid</td><td>Bottom</td></tr>
+<tr><td>127</td><td>Oxalic acid</td><td>Bottom</td></tr>
+<tr><td>128</td><td>Potato Dextrose broth</td><td>Bottom</td></tr>
+<tr><td>129</td><td>Poly(etheleneimine) solution</td><td>Bottom</td></tr>
+<tr><td>130</td><td>p-Aminobenzoic acid, Pure</td><td>Bottom</td></tr>
+<tr><td>131</td><td>Phenylmethanesulfonyl fluoride</td><td>Bottom</td></tr>
+<tr><td>132</td><td>polyvinylypyrrolidone</td><td>Bottom</td></tr>
+<tr><td>133</td><td>phenol red indicator</td><td>Bottom</td></tr>
+<tr><td>134</td><td>4-Phenylphenol</td><td>Bottom</td></tr>
+<tr><td>135</td><td>propyl gallate</td><td>Bottom</td></tr>
+<tr><td>136</td><td>Polymethylmethacrylate</td><td>Bottom</td></tr>
+<tr><td>137</td><td>potassium iodide</td><td>Bottom</td></tr>
+<tr><td>138</td><td>potassium ferriccyanide</td><td>Bottom</td></tr>
+<tr><td>139</td><td>potassium permanganate</td><td>Bottom</td></tr>
+<tr><td>140</td><td>potassium sulphate</td><td>Bottom</td></tr>
+<tr><td>141</td><td>potassium disulfide</td><td>Bottom</td></tr>
+<tr><td>142</td><td>potassium persulphate</td><td>Bottom</td></tr>
+<tr><td>143</td><td>potassium hexacyano-ferrate (II) trihydrate</td><td>Bottom</td></tr>
+<tr><td>144</td><td>potassium dihydrogen phosphate</td><td>Bottom</td></tr>
+<tr><td>145</td><td>potassium chloride 99%</td><td>Bottom</td></tr>
+<tr><td>146</td><td>potassium chromate pure</td><td>Bottom</td></tr>
+<tr><td>147</td><td>potassium phosphate</td><td>Bottom</td></tr>
+<tr><td>148</td><td>potassium dihydrogen orthophosphate (potassium phosphate monobasic)</td><td>Bottom</td></tr>
+<tr><td>149</td><td>potassium dichromate</td><td>Bottom</td></tr>
+<tr><td>150</td><td>potassium nitrate</td><td>Bottom</td></tr>
+<tr><td>151</td><td>potassium carbonate anhydrous</td><td>Bottom</td></tr>
+<tr><td>152</td><td>potassium oxalate</td><td>Bottom</td></tr>
+<tr><td>153</td><td>palmitic acid</td><td>Top</td></tr>
+<tr><td>154</td><td>polyethylene glycdol MW</td><td>Top</td></tr>
+<tr><td>155</td><td>polyethylene glycdol 6000</td><td>Top</td></tr>
+<tr><td>156</td><td>papaic digest of casein</td><td>Top</td></tr>
+<tr><td>157</td><td>p-anisidine</td><td>Top</td></tr>
+<tr><td>158</td><td>riboflavin</td><td>Top</td></tr>
+<tr><td>159</td><td>rutin (trihydrate)</td><td>Top</td></tr>
+<tr><td>160</td><td>salicin</td><td>Top</td></tr>
+<tr><td>161</td><td>Sephadex G-100</td><td>Top</td></tr>
+<tr><td>162</td><td>Silver nitrate 99.8%</td><td>Top</td></tr>
+<tr><td>163</td><td>Sodium azide 99%</td><td>Top</td></tr>
+<tr><td>164</td><td>Sodium chlorate</td><td>Top</td></tr>
+<tr><td>165</td><td>sulfate reducing broth, Base</td><td>Top</td></tr>
+<tr><td>166</td><td>sulfanilamide</td><td>Top</td></tr>
+<tr><td>167</td><td>sulphanilamide</td><td>Top</td></tr>
+<tr><td>168</td><td>succinic acid GR</td><td>Top</td></tr>
+<tr><td>169</td><td>sodium succinate</td><td>Top</td></tr>
+<tr><td>170</td><td>starch soluble</td><td>Top</td></tr>
+<tr><td>171</td><td>sucrose extra pure</td><td>Top</td></tr>
+<tr><td>172</td><td>Sodium Carbonate Anhydrous</td><td>Top</td></tr>
+<tr><td>173</td><td>sodium nitrate AR</td><td>Top</td></tr>
+<tr><td>174</td><td>Sodium potassium tartarate</td><td>Top</td></tr>
+<tr><td>175</td><td>Sodium Chloride</td><td>Top</td></tr>
+<tr><td>176</td><td>sodium hydroxide pellets</td><td>Bottom</td></tr>
+<tr><td>177</td><td>di sodium hydrogen phosphate anhydrous</td><td>Bottom</td></tr>
+<tr><td>178</td><td>sodium dihydrogen orthophosphate</td><td>Bottom</td></tr>
+<tr><td>179</td><td>di sodium hydrogen orthophosphate anhydrous</td><td>Bottom</td></tr>
+<tr><td>180</td><td>Sodium silicate powder (META)</td><td>Bottom</td></tr>
+<tr><td>181</td><td>sodium thiosulphate pentahydrate purified</td><td>Bottom</td></tr>
+<tr><td>182</td><td>sodium thiosulphate anhydrous 97%</td><td>Bottom</td></tr>
+<tr><td>183</td><td>sodium sulphite anhydrous</td><td>Bottom</td></tr>
+<tr><td>184</td><td>sodium acetate anhydrous pure</td><td>Bottom</td></tr>
+<tr><td>185</td><td>Sodium Oxalate</td><td>Bottom</td></tr>
+<tr><td>186</td><td>silica gel 200-400</td><td>Bottom</td></tr>
+<tr><td>187</td><td>sodium dedocyl sulphate</td><td>Bottom</td></tr>
+<tr><td>188</td><td>sodium sulphate dry purified</td><td>Bottom</td></tr>
+<tr><td>189</td><td>sodium carbonate monhydrate 99.5%</td><td>Bottom</td></tr>
+<tr><td>190</td><td>sodium methoxide 98%</td><td>Bottom</td></tr>
+<tr><td>191</td><td>sodium ferrocyanide AR</td><td>Bottom</td></tr>
+<tr><td>192</td><td>sodium dihydrogen phosphate dihydrate</td><td>Bottom</td></tr>
+<tr><td>193</td><td>di sodium tartarate purified</td><td>Bottom</td></tr>
+<tr><td>194</td><td>di sodium oxalate</td><td>Bottom</td></tr>
+<tr><td>195</td><td>Sodium Oxalate</td><td>Bottom</td></tr>
+<tr><td>196</td><td>sodium phosphate dibasic anhydrous</td><td>Bottom</td></tr>
+<tr><td>197</td><td>tri sodium citrate dihydrate</td><td>Bottom</td></tr>
+<tr><td>198</td><td>starch casein agar</td><td>Bottom</td></tr>
+<tr><td>199</td><td>stannous chloride</td><td>Bottom</td></tr>
+<tr><td>200</td><td>sodium hydrogen carbonate</td><td>Bottom</td></tr>
+<tr><td>201</td><td>sulphanilamide</td><td>Top</td></tr>
+<tr><td>202</td><td>safranin T</td><td>Top</td></tr>
+<tr><td>203</td><td>sodium phosphate monobasic dihydrate</td><td>Top</td></tr>
+<tr><td>204</td><td>syringaldehyde</td><td>Top</td></tr>
+<tr><td>205</td><td>Tris hydrochloride, A.R.</td><td>Top</td></tr>
+<tr><td>206</td><td>Tetrazoinum salt 99%</td><td>Top</td></tr>
+<tr><td>207</td><td>pyrogallol (1,2,3-trihydroxybenyene)</td><td>Top</td></tr>
+<tr><td>208</td><td>Tannic acid powder puriss</td><td>Top</td></tr>
+<tr><td>209</td><td>tert-Butylhydroquinone</td><td>Top</td></tr>
+<tr><td>210</td><td>Trehalose 99%</td><td>Top</td></tr>
+<tr><td>211</td><td>Triton X-100 [Polyethylene glycol-p-isooctylphenyl ether]</td><td>Top</td></tr>
+<tr><td>212</td><td>thiosemicarbazide AR</td><td>Top</td></tr>
+<tr><td>213</td><td>Trichloroacetic Acid 98% Extra pure</td><td>Top</td></tr>
+<tr><td>214</td><td>tergitol -7</td><td>Top</td></tr>
+<tr><td>215</td><td>1 1 3 3 tertramethoxy propane</td><td>Top</td></tr>
+<tr><td>216</td><td>thiobarbituric acid 98% AR</td><td>Top</td></tr>
+<tr><td>217</td><td>tributyrin</td><td>Top</td></tr>
+<tr><td>218</td><td>tartaric acid</td><td>Top</td></tr>
+<tr><td>219</td><td>thymol</td><td>Top</td></tr>
+<tr><td>220</td><td>N N N tetramethyl ethylenediamine</td><td>Top</td></tr>
+<tr><td>221</td><td>TrihPotassium Citrate monohydrate Purified</td><td>Top</td></tr>
+<tr><td>222</td><td>True(Hydroxymethyl)-Aminomethane</td><td>Top</td></tr>
+<tr><td>223</td><td>Tryptone Bacteriological</td><td>Top</td></tr>
+<tr><td>224</td><td>U urea</td><td>Top</td></tr>
+<tr><td>225</td><td>V violet bile agar</td><td>Top</td></tr>
+<tr><td>226</td><td>yeast extract powder</td><td>Top</td></tr>
+<tr><td>227</td><td>Zinc sulphate</td><td>Top</td></tr>
+<!-- Instrumentation/Top Shelf -->
+<tr><td>228</td><td>ammonium chloride</td><td>Top</td></tr>
+<tr><td>229</td><td>ammonium sulfate</td><td>Top</td></tr>
+<tr><td>230</td><td>di ammonium hydrogen orthophosphate</td><td>Top</td></tr>
+<tr><td>231</td><td>calcium carbonate precipitated</td><td>Top</td></tr>
+<tr><td>232</td><td>dextrose anhydrous</td><td>Top</td></tr>
+<tr><td>233</td><td>dodecanoic acid</td><td>Top</td></tr>
+<tr><td>234</td><td>ion exchange resin</td><td>Top</td></tr>
+<tr><td>235</td><td>molecular sieve</td><td>Top</td></tr>
+<tr><td>236</td><td>potassium oxalate</td><td>Top</td></tr>
+<tr><td>237</td><td>potassium chloride</td><td>Top</td></tr>
+<tr><td>238</td><td>potassium dihydrogen orthophosphate (potassium phosphate monobasic)</td><td>Top</td></tr>
+<tr><td>239</td><td>potassium hydrogen phthalate</td><td>Top</td></tr>
+<!-- Instrumentation lab reagents -->
+<tr><td>240</td><td>sodium sulphate decahydrate</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>241</td><td>hydranal</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>242</td><td>Ammonium ferrous sulphate</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>243</td><td>ammonium chloride</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>244</td><td>L-asparagine monohydrate</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>245</td><td>N Laurylsarcosine sodium salt</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>246</td><td>calcium chloride</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>247</td><td>calcium carbonate</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>248</td><td>1-vinyl-2-pyrrolidinone</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>249</td><td>vitamin B1 hydrochloride</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>250</td><td>ammonium sulphate 98.5%</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>251</td><td>3-methyl-2-benzolinone hydrazone hydrochloride</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>252</td><td>NN dimethylalanine</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>253</td><td>undecanoic acid</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>254</td><td>uric acid</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>255</td><td>xanthum gum</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>256</td><td>silica gel 200-400</td><td>Instrumentation Lab Shelf</td></tr>
+<tr><td>257</td><td>molecular sieves</td><td>Instrumentation Lab Shelf</td></tr>
+<!-- Fridge Chemicals -->
+<tr><td>258</td><td>Xylan from beechwood SRL</td><td>Cabin Fridge -20°C</td></tr>
+<tr><td>259</td><td>Prestained Protein Ladder - Himedia</td><td>Cabin Fridge</td></tr>
+<tr><td>260</td><td>cholesterol 97%</td><td>Cabin Fridge</td></tr>
+<tr><td>261</td><td>Lipase isolated from Candida antarctica - Sigma</td><td>Cabin Fridge</td></tr>
+<tr><td>262</td><td>2,2-azino-bis(3-ethylbenzothiazoline-6-sulfonic acid) diammonium salt</td><td>Cabin Fridge</td></tr>
+<tr><td>263</td><td>Pectinase from Rhizopus sp.</td><td>Cabin Fridge</td></tr>
+<tr><td>264</td><td>α-amylase from bacillus</td><td>Cabin Fridge</td></tr>
+<tr><td>265</td><td>Invertase from baker's yeast (S. cerevisiae) - Sigma</td><td>Cabin Fridge</td></tr>
+<tr><td>266</td><td>Lipase B immobilized on immobead 150 - Candida antarctica - Sigma</td><td>Cabin Fridge</td></tr>
+<tr><td>267</td><td>Tyrosinase from Mushroom</td><td>Cabin Fridge</td></tr>
+<tr><td>268</td><td>Pancreatin 3X (Porcine Pancreas)</td><td>Cabin Fridge</td></tr>
+<tr><td>269</td><td>Lycopene (HPLC)</td><td>Cabin Fridge</td></tr>
+<tr><td>270</td><td>β-Carotene type 1</td><td>Cabin Fridge</td></tr>
+<tr><td>271</td><td>Peroxidase Horseradish type 2 (for ELISA)</td><td>Cabin Fridge</td></tr>
+<tr><td>272</td><td>Lactoperoxidase- abnova</td><td>Cabin Fridge</td></tr>
+<tr><td>273</td><td>Oxalate assay kit - Sigma</td><td>Cabin Fridge</td></tr>
+<tr><td>274</td><td>Procyanidin B2 -5mg</td><td>Cabin Fridge</td></tr>
+<tr><td>275</td><td>Tyrosinase from mushroom (buffered)</td><td>Cabin Fridge</td></tr>
+<tr><td>276</td><td>Bradford reagent for proteins - SRL</td><td>Cabin Fridge</td></tr>
+<tr><td>277</td><td>β-thujaplicin 99%</td><td>Cabin Fridge</td></tr>
+<tr><td>278</td><td>Phenyl Acetate TCI</td><td>Cabin Fridge</td></tr>
+<tr><td>279</td><td>Bovine serum albumin fraction-V HIMEDIA</td><td>Cabin Fridge</td></tr>
+<tr><td>280</td><td>Pepsin 1:10000- LOBA CHEMIE</td><td>Cabin Fridge</td></tr>
+<tr><td>281</td><td>DL_alpha-tocopherol acetate powder CDH</td><td>Cabin Fridge</td></tr>
+<tr><td>282</td><td>DL_alpha-tocopherol acetate Cell culture tested CDH</td><td>Cabin Fridge</td></tr>
+<tr><td>283</td><td>Streptomycin sulfate salt</td><td>Cabin Fridge</td></tr>
+<tr><td>284</td><td>Amyloglucosidase from Aspergillus niger</td><td>Cabin Fridge</td></tr>
+<tr><td>285</td><td>α-amylase from malt</td><td>Cabin Fridge</td></tr>
+<tr><td>286</td><td>Lipase acrylic resin</td><td>Cabin Fridge</td></tr>
+<tr><td>287</td><td>Bovine Serum albumin (protease and nuclease free) -HIMEDIA</td><td>Cabin Fridge</td></tr>
+<tr><td>288</td><td>Bovine serum albumin</td><td>Cabin Fridge</td></tr>
+
+<!-- Cupboard Chemicals -->
+<tr><td>289</td><td>Ammonium molybdate</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>290</td><td>Nesslers reagent</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>291</td><td>Inulin AR</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>292</td><td>TEMED AR</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>293</td><td>Silver nitrate</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>294</td><td>Ethylene diamine tetra acetic acid, monosodium salt</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>295</td><td>Bromophenol blue</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>296</td><td>Gelatin powder</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>297</td><td>Agar</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>298</td><td>Coomassie brilliant blue</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>299</td><td>Oxalic acid dehydrate</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>300</td><td>Muller Hinton agar</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>301</td><td>Ammonium chloride</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>302</td><td>L-asparagine monohydrate</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>303</td><td>Cobaltous sulphate heptahydrate</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>304</td><td>Sodium taurocholate</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>305</td><td>5,5-Dithiobis(2-nitrobenzoic acid)</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>306</td><td>Nalidixic acid, free acid</td><td>Cabin Top Cupboard</td></tr>
+<tr><td>307</td><td>1,10 phenanthroline</td><td>Cabin Top Cupboard</td></tr>
+
+<!-- Solvents (Labs, Fume Hood) -->
+<tr><td>308</td><td>Iso-Octane (2,2,4-Trimethylpentane)</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>309</td><td>Olive oil</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>310</td><td>Nitric acid about 69%</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>311</td><td>Acetic Acid glacial 99-100%</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>312</td><td>Ethyl acetate LR</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>313</td><td>n-butanol</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>314</td><td>Guaiacol 99% extra pure</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>315</td><td>Hexane 65-70°C 85% extra pure</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>316</td><td>Trichloro acetic acid 98%</td><td>Fume Hood Cupboard (Right)</td></tr>
+<!-- More Solvents and Special Chemicals (Fume Hood/Instrumentation Lab) -->
+<tr><td>317</td><td>Toluene Rectified</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>318</td><td>n-hexanol</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>319</td><td>Acetic acid glacial</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>320</td><td>1-Dodecanol</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>321</td><td>Tert-butanol</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>322</td><td>Tert-amyl alcohol</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>323</td><td>Guaiacol (O-Methyl Phenol)</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>324</td><td>Diethylene Glycol</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>325</td><td>1,4-Dioxane</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>326</td><td>2-Methyl-2-butanol</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>327</td><td>Iodine Monochloride solution</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>328</td><td>Ethyl Methyl</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>329</td><td>Dimethyl Sulfoxide 99%</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>330</td><td>Dimethyl Sulphoxide 99.5%</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>331</td><td>Aliquat 336 (88%)</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>332</td><td>1-Decanol</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>333</td><td>Pyridine</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>334</td><td>Oleic acid</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>335</td><td>n-Amyl Alcohol</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>336</td><td>Ethanolamine</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>337</td><td>Lactic Acid</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>338</td><td>Diethanolamine 98%</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>339</td><td>Hydrochloric Acid (35%)</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>340</td><td>n-Propyl Alcohol</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>341</td><td>Dichloromethane 99%</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>342</td><td>Glutaraldehyde 25%</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>343</td><td>Polyethylene Glycol 200</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>344</td><td>Polyethylene Glycol 400</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>345</td><td>Polyethylene Glycol 600</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>346</td><td>2-Mercaptoethanol</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>347</td><td>Iso-Amyl Alcohol 98%</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>348</td><td>Trifloro acetic acid (HPLC)</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>349</td><td>P-Chloro Phenol</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>350</td><td>Ethyl Methyl Ketone 99%</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>351</td><td>Perchloric Acid 70%</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>352</td><td>Docyl Alcohol</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>353</td><td>Octanol</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>354</td><td>HMDS</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>355</td><td>Ammonia Solution</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>356</td><td>Triton X</td><td>Fume Hood Cupboard (Right)</td></tr>
+<tr><td>357</td><td>Toluene (HPLC)</td><td>Fume Hood Cupboard (Right)</td></tr>
+<!-- Complete list ends here -->
+            </tbody>
+        </table>
+    </div>
+    <script>
+        document.getElementById('searchInput').addEventListener('keyup', function(){
+            let filter = this.value.toLowerCase();
+            let rows = document.querySelectorAll('#chemicalsTable tbody tr');
+            rows.forEach(row => {
+                let match = Array.from(row.cells).some(
+                    td => td.textContent.toLowerCase().includes(filter)
+                );
+                row.style.display = match ? '' : 'none';
+            });
+        });
+    </script>
+
+<style>
+body, html {margin:0;padding:0;overflow-x:hidden;}
+#moving-bg {
+  position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: -2;
+  background: linear-gradient(120deg,#1b203c 0%,#23416e 54%,#aedbbf 100%);
+  background-size: 300% 300%;
+  animation: gradientShift 16s ease-in-out infinite alternate;
+}
+@keyframes gradientShift {
+  0%{background-position:0% 30%;}
+  63%{background-position:60% 80%;}
+  100%{background-position:0% 30%;}
+}
+.bg-blob {
+  position: fixed; pointer-events:none; border-radius:50%;
+  filter:blur(28px); opacity:.26; mix-blend-mode:lighten; z-index:-1;
+  animation: blobFloat 17s infinite alternate cubic-bezier(.43,.7,.3,1.1);
+}
+.bg-blob1 {width:520px;height:410px;left:6vw;top:13vh;background:#2157b2;animation-delay:0s;}
+.bg-blob2 {width:330px;height:350px;right:8vw;top:38vh;background:#93e2d7;animation-delay:4s;}
+.bg-blob3 {width:270px;height:230px;left:54vw;bottom:8vh;background:#8dd1e1;animation-delay:2s;}
+.bg-blob4 {width:190px;height:270px;right:28vw;bottom:7vh;background:#f3fcfb;animation-delay:9s;}
+.bg-blob5 {width:140px;height:200px;left:16vw;top:67vh;background:#9a5fc4;animation-delay:12s;}
+@keyframes blobFloat {
+  0%{transform:translateY(0) scale(1);}
+  45%{transform:translateY(-60px) scale(1.16);}
+  100%{transform:translateY(30px) scale(0.95);}
+}
+</style>
+<div id="moving-bg"></div>
+<div class="bg-blob bg-blob1"></div>
+<div class="bg-blob bg-blob2"></div>
+<div class="bg-blob bg-blob3"></div>
+<div class="bg-blob bg-blob4"></div>
+<div class="bg-blob bg-blob5"></div>
+
+</body>
+</html>
+
